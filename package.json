@@ -1,0 +1,23 @@
+{
+  "name": "elm-aws",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@talentry/elm-git-hooks": "^1.0.1",
+    "elm": "^0.19.1-5",
+    "elm-format": "^0.8.5",
+    "elm-review": "^2.5.1",
+    "elm-test": "^0.19.1-revision7",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0"
+  },
+  "scripts": {
+    "postinstall": "husky install"
+  },
+  "lint-staged": {
+    "*.elm": [
+      "elm-format --yes"
+    ]
+  }
+}
